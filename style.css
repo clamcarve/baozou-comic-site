@@ -155,9 +155,21 @@ code { font: .92em ui-monospace, Consolas, monospace; background: var(--bg-tint)
 .dl-history a { color: var(--accent); margin-left: 10px; text-decoration: underline; }
 .dl-note { margin-top: 24px; text-align: center; color: var(--dark-soft); font-size: 14px; }
 
+.community { grid-template-columns: 1.2fr .8fr; }
+.contact { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 16px; margin-top: 24px; padding-top: 20px; border-top: 1px solid var(--line); }
+.community .lead + .contact { margin-top: 32px; }
+.contact-label { flex: 0 0 100%; color: var(--ink-soft); font-size: 14px; }
+.contact-value { font-size: clamp(24px, 3vw, 32px); font-weight: 800; font-variant-numeric: tabular-nums; user-select: all; }
+.contact .btn { cursor: pointer; font-family: inherit; }
+.contact-status { color: var(--ink-soft); font-size: 14px; }
+.qr { justify-self: center; width: min(280px, 100%); }
+.qr img { border-radius: var(--radius); border: 1px solid var(--line); box-shadow: var(--shadow); }
+.qr figcaption { margin-top: 14px; text-align: center; color: var(--ink-soft); font-size: 14px; }
+
 .footer { border-top: 1px solid var(--line); padding-block: 36px; }
 .footer-inner { display: grid; grid-template-columns: auto 1fr; gap: 36px; align-items: start; }
 .footer p { color: var(--ink-soft); font-size: 13px; max-width: 62em; }
+.footer .footer-contact { grid-column: 2; font-weight: 600; margin-top: -24px; }
 
 .reveal { opacity: 0; transform: translateY(16px); transition: opacity .6s ease-out, transform .6s ease-out; }
 .reveal.in { opacity: 1; transform: none; }
@@ -168,7 +180,7 @@ code { font: .92em ui-monospace, Consolas, monospace; background: var(--bg-tint)
   .hero-inner { grid-template-columns: 1fr; min-height: 0; padding-block: 48px 24px; }
   .hero-phones { height: 520px; }
   .hero-phones .phone { width: 220px; }
-  .split, .split-rev { grid-template-columns: 1fr; }
+  .split, .split-rev, .community { grid-template-columns: 1fr; }
   .compare-wrap { max-width: 560px; width: 100%; justify-self: center; }
 }
 
@@ -185,6 +197,7 @@ code { font: .92em ui-monospace, Consolas, monospace; background: var(--bg-tint)
   .feature-grid { grid-template-columns: 1fr; gap: 28px; }
   .dl-grid { grid-template-columns: 1fr; }
   .footer-inner { grid-template-columns: 1fr; gap: 12px; }
+  .footer .footer-contact { grid-column: auto; margin-top: 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {

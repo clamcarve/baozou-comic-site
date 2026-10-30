@@ -20,6 +20,17 @@
     targets.forEach(function (el) { el.classList.add('reveal'); io.observe(el); });
   }
 
+  var copyBtn = document.getElementById('copy-group');
+  if (copyBtn) {
+    var copyStatus = document.getElementById('copy-status');
+    copyBtn.addEventListener('click', function () {
+      var id = document.getElementById('group-id').textContent;
+      // 剪贴板接口只在 HTTPS 下有；拿不到时提示手动复制，群号本身点一下就能全选
+      var job = navigator.clipboard ? navigator.clipboard.writeText(id) : Promise.reject();
+      job.then(function () { copyStatus.textContent = '已复制'; }, function () { copyStatus.textContent = '复制失败，请手动选中群号复制'; });
+    });
+  }
+
   function el(tag, cls, text) {
     var n = document.createElement(tag);
     if (cls) n.className = cls;

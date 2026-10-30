@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200" width="900" height="1200"><defs>
+<pattern id="tone" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><circle cx="5" cy="5" r="2.1" fill="#111"/></pattern>
+<pattern id="toneL" width="12" height="12" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><circle cx="6" cy="6" r="1.5" fill="#111"/></pattern>
+<clipPath id="p1"><rect x="36" y="36" width="828" height="330"/></clipPath>
+<clipPath id="p3"><rect x="456" y="392" width="408" height="392"/></clipPath>
+<clipPath id="p4"><rect x="36" y="810" width="828" height="354"/></clipPath>
+</defs>
+<rect width="900" height="1200" fill="#fff"/>
+
+<!-- 第一格：夜里翻开一本书 -->
+<g clip-path="url(#p1)">
+<rect x="36" y="36" width="828" height="330" fill="url(#tone)"/>
+<rect x="110" y="66" width="190" height="160" fill="#fff" stroke="#111" stroke-width="6"/>
+<path d="M205 66V226M110 146H300" stroke="#111" stroke-width="5"/>
+<circle cx="256" cy="108" r="26" fill="#111"/><circle cx="268" cy="100" r="24" fill="#fff"/>
+<rect x="36" y="302" width="828" height="70" fill="#fff" stroke="#111" stroke-width="6"/>
+<g transform="translate(330 214) scale(0.92 0.92)">
+<path d="M-90-40-98-128-24-82ZM90-40 98-128 24-82Z" fill="#fff" stroke="#111" stroke-width="6" stroke-linejoin="round"/>
+<path d="M-80-62-86-108-46-84ZM80-62 86-108 46-84Z" fill="url(#tone)"/>
+<ellipse rx="104" ry="84" fill="#fff" stroke="#111" stroke-width="6"/>
+<path d="M-22-82V-54M0-84V-50M22-82V-54" stroke="#111" stroke-width="7" stroke-linecap="round"/>
+<ellipse cx="-38" cy="-8" rx="12" ry="16" fill="#111"/><ellipse cx="38" cy="-8" rx="12" ry="16" fill="#111"/><circle cx="-34" cy="-14" r="4.5" fill="#fff"/><circle cx="42" cy="-14" r="4.5" fill="#fff"/><path d="M-8 14H8L0 24Z" fill="#111"/><path d="M-18 26Q-9 38 0 26Q9 38 18 26" fill="none" stroke="#111" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M-74 12-122 2M-74 26-122 30M74 12 122 2M74 26 122 30" stroke="#111" stroke-width="3.5" stroke-linecap="round"/>
+</g>
+<g transform="translate(330 292) scale(0.86)">
+<path d="M0 0Q-60-26-120-6V70Q-60 50 0 76Q60 50 120 70V-6Q60-26 0 0Z" fill="#fff" stroke="#111" stroke-width="6" stroke-linejoin="round"/>
+<path d="M0 0V76" stroke="#111" stroke-width="5"/>
+<path d="M-98 12Q-56 2-20 16M-98 32Q-56 22-20 36M98 12Q56 2 20 16M98 32Q56 22 20 36" fill="none" stroke="#111" stroke-width="3.5"/></g>
+<rect x="600" y="248" width="150" height="26" fill="#fff" stroke="#111" stroke-width="5"/>
+<rect x="612" y="222" width="126" height="26" fill="url(#toneL)" stroke="#111" stroke-width="5"/>
+<rect x="596" y="274" width="160" height="28" fill="#fff" stroke="#111" stroke-width="5"/>
+</g>
+<rect x="36" y="36" width="828" height="330" fill="none" stroke="#111" stroke-width="7"/>
+
+<!-- 第二格：外文，看不懂 -->
+<rect x="36" y="392" width="396" height="392" fill="#fff"/>
+<rect x="36" y="640" width="396" height="144" fill="url(#toneL)"/>
+<g transform="translate(214 640) scale(1.02 1.02)">
+<path d="M-90-40-98-128-24-82ZM90-40 98-128 24-82Z" fill="#fff" stroke="#111" stroke-width="6" stroke-linejoin="round"/>
+<path d="M-80-62-86-108-46-84ZM80-62 86-108 46-84Z" fill="url(#tone)"/>
+<ellipse rx="104" ry="84" fill="#fff" stroke="#111" stroke-width="6"/>
+<path d="M-22-82V-54M0-84V-50M22-82V-54" stroke="#111" stroke-width="7" stroke-linecap="round"/>
+<circle cx="-38" cy="-8" r="19" fill="#fff" stroke="#111" stroke-width="4"/><circle cx="38" cy="-8" r="19" fill="#fff" stroke="#111" stroke-width="4"/><circle cx="-38" cy="-8" r="4" fill="#111"/><circle cx="38" cy="-8" r="4" fill="#111"/><path d="M-8 14H8L0 24Z" fill="#111"/><path d="M-18 26Q-9 38 0 26Q9 38 18 26" fill="none" stroke="#111" stroke-width="4.5" stroke-linecap="round"/>
+<path d="M-74 12-122 2M-74 26-122 30M74 12 122 2M74 26 122 30" stroke="#111" stroke-width="3.5" stroke-linecap="round"/>
+</g>
+<path d="M308 500Q308 470 338 470Q368 470 368 498Q368 516 348 526Q338 532 338 548" fill="none" stroke="#111" stroke-width="12" stroke-linecap="round"/><circle cx="338" cy="572" r="8" fill="#111"/>
+<rect x="36" y="392" width="396" height="392" fill="none" stroke="#111" stroke-width="7"/>
+
+<!-- 第三格：按下翻译 -->
+<rect x="456" y="392" width="408" height="392" fill="#fff"/>
+<g clip-path="url(#p3)"><path d="M810 620L1360 620" stroke="#111" stroke-width="2"/><path d="M846 638L1357 689" stroke="#111" stroke-width="5"/><path d="M821 652L1347 757" stroke="#111" stroke-width="3"/><path d="M852 678L1330 823" stroke="#111" stroke-width="6"/><path d="M824 688L1307 888" stroke="#111" stroke-width="4"/><path d="M797 693L1277 950" stroke="#111" stroke-width="2"/><path d="M820 727L1242 1009" stroke="#111" stroke-width="5"/><path d="M791 727L1201 1064" stroke="#111" stroke-width="3"/><path d="M806 766L1155 1115" stroke="#111" stroke-width="6"/><path d="M776 761L1104 1161" stroke="#111" stroke-width="4"/><path d="M749 753L1049 1202" stroke="#111" stroke-width="2"/><path d="M753 794L990 1237" stroke="#111" stroke-width="5"/><path d="M727 781L928 1267" stroke="#111" stroke-width="3"/><path d="M704 764L863 1290" stroke="#111" stroke-width="6"/><path d="M697 804L797 1307" stroke="#111" stroke-width="4"/><path d="M676 784L729 1317" stroke="#111" stroke-width="2"/><path d="M660 822L660 1320" stroke="#111" stroke-width="5"/><path d="M642 798L591 1317" stroke="#111" stroke-width="3"/><path d="M630 773L523 1307" stroke="#111" stroke-width="6"/><path d="M604 805L457 1290" stroke="#111" stroke-width="4"/><path d="M595 777L392 1267" stroke="#111" stroke-width="2"/><path d="M562 803L330 1237" stroke="#111" stroke-width="5"/><path d="M558 773L271 1202" stroke="#111" stroke-width="3"/><path d="M558 744L216 1161" stroke="#111" stroke-width="6"/><path d="M520 760L165 1115" stroke="#111" stroke-width="4"/><path d="M525 731L119 1064" stroke="#111" stroke-width="2"/><path d="M534 704L78 1009" stroke="#111" stroke-width="5"/><path d="M493 709L43 950" stroke="#111" stroke-width="3"/><path d="M507 684L13 888" stroke="#111" stroke-width="6"/><path d="M466 679L-10 823" stroke="#111" stroke-width="4"/><path d="M483 655L-27 757" stroke="#111" stroke-width="2"/><path d="M504 635L-37 689" stroke="#111" stroke-width="5"/><path d="M466 620L-40 620" stroke="#111" stroke-width="3"/><path d="M490 603L-37 551" stroke="#111" stroke-width="6"/><path d="M456 579L-27 483" stroke="#111" stroke-width="4"/><path d="M483 566L-10 417" stroke="#111" stroke-width="2"/><path d="M510 558L13 352" stroke="#111" stroke-width="5"/><path d="M484 526L43 290" stroke="#111" stroke-width="3"/><path d="M514 522L78 231" stroke="#111" stroke-width="6"/><path d="M542 523L119 176" stroke="#111" stroke-width="4"/><path d="M526 486L165 125" stroke="#111" stroke-width="2"/><path d="M554 491L216 79" stroke="#111" stroke-width="5"/><path d="M547 450L271 38" stroke="#111" stroke-width="3"/><path d="M575 460L330 3" stroke="#111" stroke-width="6"/><path d="M600 474L392 -27" stroke="#111" stroke-width="4"/><path d="M603 433L457 -50" stroke="#111" stroke-width="2"/><path d="M626 451L523 -67" stroke="#111" stroke-width="5"/><path d="M640 412L591 -77" stroke="#111" stroke-width="3"/><path d="M660 434L660 -80" stroke="#111" stroke-width="6"/><path d="M676 458L729 -77" stroke="#111" stroke-width="4"/><path d="M699 424L797 -67" stroke="#111" stroke-width="2"/><path d="M711 451L863 -50" stroke="#111" stroke-width="5"/><path d="M719 478L928 -27" stroke="#111" stroke-width="3"/><path d="M750 452L990 3" stroke="#111" stroke-width="6"/><path d="M753 480L1049 38" stroke="#111" stroke-width="4"/><path d="M790 462L1104 79" stroke="#111" stroke-width="2"/><path d="M789 491L1155 125" stroke="#111" stroke-width="5"/><path d="M783 519L1201 176" stroke="#111" stroke-width="3"/><path d="M823 511L1242 231" stroke="#111" stroke-width="6"/><path d="M813 538L1277 290" stroke="#111" stroke-width="4"/><path d="M799 563L1307 352" stroke="#111" stroke-width="2"/><path d="M839 566L1330 417" stroke="#111" stroke-width="5"/><path d="M821 588L1347 483" stroke="#111" stroke-width="3"/><path d="M860 600L1357 551" stroke="#111" stroke-width="6"/></g>
+<g transform="rotate(-8 660 640)">
+<rect x="568" y="500" width="184" height="290" rx="26" fill="#fff" stroke="#111" stroke-width="7"/>
+<rect x="586" y="524" width="148" height="170" rx="6" fill="url(#toneL)" stroke="#111" stroke-width="4"/>
+<circle cx="660" cy="610" r="50" fill="#fff" stroke="#111" stroke-width="6"/>
+<path d="M636 588H684M660 578V588M642 588Q654 624 682 636M678 588Q668 622 638 636" fill="none" stroke="#111" stroke-width="6" stroke-linecap="round"/>
+</g>
+<path d="M786 682Q800 646 758 636Q724 628 700 630Q686 632 688 646Q690 660 706 660L720 662Q690 668 694 686Q698 700 716 698L780 716Z" fill="#fff" stroke="#111" stroke-width="6" stroke-linejoin="round"/>
+<rect x="456" y="392" width="408" height="392" fill="none" stroke="#111" stroke-width="7"/>
+
+<!-- 第四格：看懂了 -->
+<g clip-path="url(#p4)">
+<rect x="36" y="810" width="828" height="354" fill="#fff"/>
+<path d="M36 1164V1040Q260 960 450 1000Q660 960 864 1040V1164Z" fill="url(#toneL)"/>
+<g transform="translate(450 1016) scale(1.28 1.28)">
+<path d="M-90-40-98-128-24-82ZM90-40 98-128 24-82Z" fill="#fff" stroke="#111" stroke-width="6" stroke-linejoin="round"/>
+<path d="M-80-62-86-108-46-84ZM80-62 86-108 46-84Z" fill="url(#tone)"/>
+<ellipse rx="104" ry="84" fill="#fff" stroke="#111" stroke-width="6"/>
+<path d="M-22-82V-54M0-84V-50M22-82V-54" stroke="#111" stroke-width="7" stroke-linecap="round"/>
+<path d="M-60-2Q-38-34-16-2" fill="none" stroke="#111" stroke-width="8" stroke-linecap="round"/><path d="M16-2Q38-34 60-2" fill="none" stroke="#111" stroke-width="8" stroke-linecap="round"/><path d="M-8 14H8L0 24Z" fill="#111"/><path d="M-24 24Q0 72 24 24Z" fill="#111"/><path d="M-11 42Q0 60 11 42Q0 36-11 42Z" fill="#fff"/>
+<path d="M-74 12-122 2M-74 26-122 30M74 12 122 2M74 26 122 30" stroke="#111" stroke-width="3.5" stroke-linecap="round"/>
+</g>
+<g transform="translate(450 1104) scale(1.0)">
+<path d="M0 0Q-60-26-120-6V70Q-60 50 0 76Q60 50 120 70V-6Q60-26 0 0Z" fill="#fff" stroke="#111" stroke-width="6" stroke-linejoin="round"/>
+<path d="M0 0V76" stroke="#111" stroke-width="5"/>
+<path d="M-98 12Q-56 2-20 16M-98 32Q-56 22-20 36M98 12Q56 2 20 16M98 32Q56 22 20 36" fill="none" stroke="#111" stroke-width="3.5"/></g>
+<path d="M100 1014L104.16 1035.84L126 1040L104.16 1044.16L100 1066L95.84 1044.16L74 1040L95.84 1035.84Z" fill="#fff" stroke="#111" stroke-width="3" stroke-linejoin="round"/><path d="M186 1038L189.52 1056.48L208 1060L189.52 1063.52L186 1082L182.48 1063.52L164 1060L182.48 1056.48Z" fill="#fff" stroke="#111" stroke-width="3" stroke-linejoin="round"/><path d="M800 1018L803.52 1036.48L822 1040L803.52 1043.52L800 1062L796.48 1043.52L778 1040L796.48 1036.48Z" fill="#fff" stroke="#111" stroke-width="3" stroke-linejoin="round"/><path d="M716 1028L721.76 1058.24L752 1064L721.76 1069.76L716 1100L710.24 1069.76L680 1064L710.24 1058.24Z" fill="#fff" stroke="#111" stroke-width="3" stroke-linejoin="round"/><path d="M290 1072L292.56 1085.44L306 1088L292.56 1090.56L290 1104L287.44 1090.56L274 1088L287.44 1085.44Z" fill="#fff" stroke="#111" stroke-width="3" stroke-linejoin="round"/><path d="M606 1086L608.24 1097.76L620 1100L608.24 1102.24L606 1114L603.76 1102.24L592 1100L603.76 1097.76Z" fill="#fff" stroke="#111" stroke-width="3" stroke-linejoin="round"/>
+</g>
+<rect x="36" y="810" width="828" height="354" fill="none" stroke="#111" stroke-width="7"/>
+
+<path d="M536 170L470 160L526 132Z" fill="#fff" stroke="#111" stroke-width="4" stroke-linejoin="round"/><ellipse cx="640" cy="136" rx="118" ry="84" fill="#fff" stroke="#111" stroke-width="4"/><path d="M536 170L503 165L498 146L526 132Z" fill="#fff"/>
+<rect x="555" y="81" width="170" height="111" rx="14" fill="#FFF6D6"/><text x="640" y="126" text-anchor="middle" font-family='"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif' font-size="36" font-weight="700" fill="#111">今晚也要</text><text x="640" y="172" text-anchor="middle" font-family='"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif' font-size="36" font-weight="700" fill="#111">看书！</text>
+<path d="M211 557L196 576L172 577Z" fill="#fff" stroke="#111" stroke-width="4" stroke-linejoin="round"/><ellipse cx="150" cy="490" rx="96" ry="92" fill="#fff" stroke="#111" stroke-width="4"/><path d="M211 557L203 567L184 576L172 577Z" fill="#fff"/>
+<rect x="81" y="427" width="138" height="126" rx="14" fill="#FFF6D6"/><text x="150" y="465" text-anchor="middle" font-family='"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif' font-size="28" font-weight="700" fill="#111">咦……？</text><text x="150" y="500" text-anchor="middle" font-family='"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif' font-size="28" font-weight="700" fill="#111">这是外文</text><text x="150" y="535" text-anchor="middle" font-family='"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif' font-size="28" font-weight="700" fill="#111">漫画！？</text>
+<path d="M139 647L150 660L169 661Z" fill="#fff" stroke="#111" stroke-width="4" stroke-linejoin="round"/><ellipse cx="118" cy="706" rx="76" ry="64" fill="#fff" stroke="#111" stroke-width="4"/><path d="M139 647L145 653L160 661L169 661Z" fill="#fff"/>
+<rect x="66" y="663" width="104" height="86" rx="14" fill="#FFF6D6"/><text x="118" y="699" text-anchor="middle" font-family='"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif' font-size="26" font-weight="700" fill="#111">看不懂</text><text x="118" y="732" text-anchor="middle" font-family='"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif' font-size="26" font-weight="700" fill="#111">喵……</text>
+<path d="M625 503L612 516L589 519Z" fill="#fff" stroke="#111" stroke-width="4" stroke-linejoin="round"/><ellipse cx="560" cy="462" rx="92" ry="62" fill="#fff" stroke="#111" stroke-width="4"/><path d="M625 503L618 510L601 517L589 519Z" fill="#fff"/>
+<rect x="505" y="417" width="110" height="91" rx="14" fill="#FFF6D6"/><text x="560" y="454" text-anchor="middle" font-family='"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif' font-size="28" font-weight="700" fill="#111">点一下</text><text x="560" y="490" text-anchor="middle" font-family='"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif' font-size="28" font-weight="700" fill="#111">翻译！</text>
+<path d="M277 922L326 960L255 957Z" fill="#fff" stroke="#111" stroke-width="4" stroke-linejoin="round"/><ellipse cx="170" cy="906" rx="112" ry="84" fill="#fff" stroke="#111" stroke-width="4"/><path d="M277 922L301 941L290 958L255 957Z" fill="#fff"/>
+<rect x="87" y="861" width="166" height="91" rx="14" fill="#FFF6D6"/><text x="170" y="898" text-anchor="middle" font-family='"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif' font-size="28" font-weight="700" fill="#111">看懂了！</text><text x="170" y="934" text-anchor="middle" font-family='"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif' font-size="28" font-weight="700" fill="#111">全看懂了！</text>
+<path d="M665 964L606 972L640 932Z" fill="#fff" stroke="#111" stroke-width="4" stroke-linejoin="round"/><ellipse cx="734" cy="906" rx="102" ry="84" fill="#fff" stroke="#111" stroke-width="4"/><path d="M665 964L636 968L623 952L640 932Z" fill="#fff"/>
+<rect x="665" y="861" width="138" height="91" rx="14" fill="#FFF6D6"/><text x="734" y="898" text-anchor="middle" font-family='"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif' font-size="28" font-weight="700" fill="#111">好想看</text><text x="734" y="934" text-anchor="middle" font-family='"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif' font-size="28" font-weight="700" fill="#111">后续喵！</text></svg>

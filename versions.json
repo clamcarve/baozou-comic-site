@@ -1,0 +1,31 @@
+{
+  "_说明": "更新版本只改这个文件：在对应平台的 versions 最前面加一条（最新的放第一个），files 里填下载地址。url 留空的按钮会显示“即将开放”。",
+  "android": {
+    "name": "安卓",
+    "devices": "手机 · 平板 · 电视",
+    "versions": [
+      {
+        "version": "1.0.9",
+        "date": "",
+        "notes": "一个安装包通用，电视上会自动切换到遥控器界面",
+        "files": [
+          { "label": "下载 APK", "url": "" }
+        ]
+      }
+    ]
+  },
+  "ios": {
+    "name": "iOS",
+    "devices": "iPhone · iPad",
+    "versions": [
+      {
+        "version": "1.0.9",
+        "date": "",
+        "notes": "未签名的 IPA，需要自行签名后安装",
+        "files": [
+          { "label": "下载 IPA", "url": "" }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>抱走漫画 — 所有书源，一个书架</title>
+<meta name="description" content="抱走漫画是一款漫画与小说阅读器，可导入 Venera、Tachiyomi、Mihon、开源阅读的书源和仓库，支持漫画悬浮翻译，提供安卓、电视和 iOS 版本。">
+<meta property="og:title" content="抱走漫画 — 所有书源，一个书架">
+<meta property="og:description" content="导入 Venera、Tachiyomi、Mihon、开源阅读的书源，还能把外文漫画翻译在原来的气泡上。">
+<meta property="og:image" content="https://mh.diaobaole.top/img/lib.jpg">
+<meta name="theme-color" content="#FBFAF5" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#101426" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="img/logo.png" type="image/png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="#top" aria-label="抱走漫画 首页">
+      <img src="img/logo.png" width="36" height="36" alt="">
+      <span>抱走漫画</span>
+    </a>
+    <nav class="nav" aria-label="页面导航">
+      <a href="#translate">漫画翻译</a>
+      <a href="#sources">书源</a>
+      <a href="#screens">界面</a>
+      <a href="#features">功能</a>
+    </nav>
+    <a class="btn btn-small" href="#download">下载</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero" id="top">
+    <div class="wrap hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">漫画 · 小说 · 听书 · 短剧</p>
+        <h1>所有书源，<br>一个书架。</h1>
+        <p class="lead">把你在 Venera、Tachiyomi、Mihon、开源阅读里攒下的源带过来，搜索和收藏都在一处。外文漫画，还能直接翻译在原来的气泡上。</p>
+        <div class="hero-actions">
+          <a class="btn" href="#download" data-latest="android">
+            <svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0-5-5m5 5 5-5M4 20h16"/></svg>
+            安卓版下载
+          </a>
+          <a class="btn btn-ghost" href="#download" data-latest="ios">iOS 版下载</a>
+        </div>
+        <p class="meta">当前版本 <span data-version>1.0.9</span> · 手机、平板、电视、iPhone、iPad</p>
+      </div>
+      <div class="hero-phones">
+        <div class="phone phone-back phone-l"><img src="img/rank.jpg" width="864" height="1920" alt="排行榜界面"></div>
+        <div class="phone phone-back phone-r"><img src="img/home.jpg" width="864" height="1920" alt="首页界面，展示 Z-Library 推荐书目"></div>
+        <div class="phone phone-front"><img src="img/lib.jpg" width="864" height="1920" alt="书架界面，同一系列的书合成一格"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="strip" aria-label="支持导入的来源">
+    <div class="wrap strip-inner">
+      <span class="strip-label">可导入</span>
+      <ul>
+        <li>Venera</li>
+        <li>Tachiyomi</li>
+        <li>Mihon</li>
+        <li>开源阅读</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="dark" id="translate">
+    <div class="wrap split">
+      <div class="split-copy">
+        <p class="eyebrow">漫画翻译</p>
+        <h2>生肉漫画，<br>看起来像熟肉。</h2>
+        <p class="lead">不用切出应用，也不用另开词典。打开翻译后，译文一块块盖在原来的对话框上，画面还是那个画面。</p>
+        <ol class="steps">
+          <li><b>识别</b><span>在手机上识别每一页的文字和位置，并按距离归并成对话框。</span></li>
+          <li><b>翻译</b><span>整页对白一次交给翻译，上下文连贯。可用内置谷歌翻译，也可接自己的 OpenAI 兼容接口或 Claude。</span></li>
+          <li><b>缓存</b><span>结果按页存在手机上，再翻回来不用重新等。</span></li>
+        </ol>
+        <p class="tags">支持日语 · 英语 · 韩语 · 法德西等拉丁字母语言 · 简繁中文</p>
+      </div>
+      <figure class="compare-wrap">
+        <div class="compare" id="compare">
+          <img class="compare-img" src="img/translate-before.svg" width="900" height="1200" loading="lazy" alt="翻译前：对话框里是竖排日文的黑白漫画">
+          <img class="compare-img compare-after" src="img/translate-after.svg" width="900" height="1200" loading="lazy" alt="翻译后：同一页漫画，对话框上盖着中文译文">
+          <span class="compare-tag tag-l">译文</span>
+          <span class="compare-tag tag-r">原文</span>
+          <div class="compare-line" aria-hidden="true"><span>
+            <svg viewBox="0 0 24 24"><path d="m9 6-6 6 6 6M15 6l6 6-6 6"/></svg>
+          </span></div>
+          <input type="range" min="0" max="100" value="55" aria-label="拖动对比翻译前后，数值越大显示的译文越多">
+        </div>
+        <figcaption>左右拖动对比。示意图，实际效果以应用内的识别和翻译结果为准。</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section" id="sources">
+    <div class="wrap">
+      <div class="heading">
+        <p class="eyebrow">书源生态</p>
+        <h2>你用惯的源，<br>这里都能用。</h2>
+        <p class="lead">抱走漫画本身不带任何内容，看什么由你决定。填一个仓库地址，或者导入旧应用的备份就行。</p>
+      </div>
+      <div class="source-grid">
+        <article class="source">
+          <h3>Venera</h3>
+          <p>导入脚本源和源仓库，脚本声明的登录、设置项都能用。也能导入 <code>.venera</code> 备份，书架和观看记录一起带过来。</p>
+          <span class="plat">安卓 · iOS</span>
+        </article>
+        <article class="source">
+          <h3>Mihon</h3>
+          <p>直接加载 APK 扩展，读取 keiyoushi 等扩展仓库。导入备份时，会按源 ID 自动装好对应的扩展。</p>
+          <span class="plat">安卓</span>
+        </article>
+        <article class="source">
+          <h3>Tachiyomi</h3>
+          <p>和 Mihon 共用同一套扩展，旧的 <code>.tachibk</code> 备份只合并、不覆盖，换过来不会弄丢现有书架。</p>
+          <span class="plat">安卓</span>
+        </article>
+        <article class="source">
+          <h3>开源阅读</h3>
+          <p>导入 Legado 书源和网络仓库，几千个源也能排队搜索。文字、漫画、听书、短剧按类型分别打开，也支持 <code>legado://</code> 一键导入。</p>
+          <span class="plat">安卓 · iOS</span>
+        </article>
+      </div>
+      <p class="note">APK 扩展依赖安卓系统，iOS 版没有 Mihon / Tachiyomi 扩展。扩展目前过不了 Cloudflare 的网页验证。</p>
+    </div>
+  </section>
+
+  <section class="section tint" id="screens">
+    <div class="wrap">
+      <div class="heading">
+        <p class="eyebrow">界面</p>
+        <h2>每一屏，都值得多看一眼。</h2>
+        <p class="lead">圆角卡片、柔和配色，部分主题还带背景动画。底栏上趴着一只陪你读书的小猫。</p>
+      </div>
+      <div class="gallery">
+        <figure>
+          <div class="phone"><img src="img/home.jpg" width="864" height="1920" loading="lazy" alt="首页：搜索框和热门、为你推荐分页，下面是图书封面网格"></div>
+          <figcaption><b>首页</b>推荐、榜单、分类，打开就有得看</figcaption>
+        </figure>
+        <figure>
+          <div class="phone"><img src="img/lib.jpg" width="864" height="1920" loading="lazy" alt="书架：分类标签和合并成一格的系列"></div>
+          <figcaption><b>书架</b>分类管理，同一系列合成书堆</figcaption>
+        </figure>
+        <figure>
+          <div class="phone"><img src="img/rank.jpg" width="864" height="1920" loading="lazy" alt="排行榜：总榜、今年新作等分页和带排名的作品列表"></div>
+          <figcaption><b>排行榜</b>总榜、新作、全球趋势，一键去搜</figcaption>
+        </figure>
+        <figure>
+          <div class="phone"><img src="img/setting.jpg" width="864" height="1920" loading="lazy" alt="设置：主题与外观、背景壁纸、液态玻璃、阅读计划、伴读萌宠等"></div>
+          <figcaption><b>设置</b>配色、壁纸、液态玻璃都能调</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="zlib">
+    <div class="wrap split split-rev">
+      <div class="split-copy">
+        <p class="eyebrow">Z-Library</p>
+        <h2>找书，下载，<br>直接进书架。</h2>
+        <p class="lead">登录你自己的 Z-Library 账号后，搜索页会多出一项。线路连不上时自动换下一个，EPUB、PDF、TXT 下载完自动导入书架。</p>
+        <ul class="ticks">
+          <li>显示今日下载额度，多个账号可以合起来算</li>
+          <li>下载位置可以自己选，默认在手机的下载文件夹</li>
+          <li>只保存登录令牌，不保存密码</li>
+        </ul>
+      </div>
+      <div class="phone phone-solo"><img src="img/download.jpg" width="864" height="1920" loading="lazy" alt="图书详情页：封面、作者、格式、大小和“下载并加入书架”按钮"></div>
+    </div>
+  </section>
+
+  <section class="section tint" id="features">
+    <div class="wrap">
+      <div class="heading">
+        <p class="eyebrow">还有这些</p>
+        <h2>细节，都替你想过了。</h2>
+      </div>
+      <div class="feature-grid">
+        <article><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5.5C7 4 10 4 12 6c2-2 5-2 8-.5V19c-3-1.5-6-1.5-8 .5-2-2-5-2-8-.5zM12 6v13.5"/></svg><h3>小说阅读</h3><p>排版、主题、纸纹背景随心调，EPUB、TXT 都能导入。</p></article>
+        <article><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 14v-2a8 8 0 0 1 16 0v2M4 14a2 2 0 0 1 2-2h1v7H6a2 2 0 0 1-2-2zM20 14a2 2 0 0 0-2-2h-1v7h1a2 2 0 0 0 2-2z"/></svg><h3>听书与短剧</h3><p>阅读源里的音频、视频用自带播放器打开，安卓上听书可以锁屏控制。</p></article>
+        <article><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v12H3zM8 21h8M12 17v4"/></svg><h3>电视版</h3><p>专门的遥控器界面。手机扫码，就能把书源和书架同步到电视。</p></article>
+        <article><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 0 18c1.5 0 2-1 2-2 0-1.5-1-2-1-3 0-1 1-2 2-2h2a4 4 0 0 0 4-4c0-4-4-7-9-7zM7.5 12h.01M9.5 7.5h.01M15 7.5h.01"/></svg><h3>配色主题</h3><p>多套配色，白天夜间分开，换主题时有圆形扩散动画。</p></article>
+        <article><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16v13H4zM8 3v6M16 3v6M4 12h16"/></svg><h3>阅读计划</h3><p>每日阅读、读完一本，到点提醒。小猫还会督促你休息。</p></article>
+        <article><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v11m0 0-4-4m4 4 4-4M4 17v3h16v-3"/></svg><h3>下载与离线</h3><p>漫画、小说、短剧都能下载，书架里的作品没网也能看详情。</p></article>
+        <article><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v16H5zM9 4v16M12 9h4M12 13h4"/></svg><h3>备份与迁移</h3><p>本地备份一个文件带走，也能导入别的应用的备份，只合并不覆盖。</p></article>
+        <article><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18zM3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/></svg><h3>按源走代理</h3><p>每个源、每组源都可以单独设代理，不用改系统网络。</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark" id="download">
+    <div class="wrap">
+      <div class="heading heading-center">
+        <p class="eyebrow">下载</p>
+        <h2>现在就把书架抱走。</h2>
+      </div>
+      <div class="dl-grid" id="dl-grid">
+        <!-- 下面的卡片由 site.js 按 versions.json 生成；脚本没跑起来时显示这段提示 -->
+        <p class="dl-fallback">下载信息加载失败，请刷新页面重试。</p>
+      </div>
+      <p class="dl-note">iOS 版是未签名的 IPA，需要用 AltStore、Sideloadly 等工具自行签名后安装。</p>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-inner">
+    <div class="brand"><img src="img/logo.png" width="28" height="28" alt=""><span>抱走漫画</span></div>
+    <p>本应用只是本地阅读工具，不提供、不托管任何内容；应用内的内容都来自用户自行添加的第三方插件、书源或本地文件，请确认你有权访问并遵守当地法律。截图中的作品版权归原作者所有。</p>
+  </div>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>
